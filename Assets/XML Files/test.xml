@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<System Temp="1">
+     <AllStates>
+          <State Label="A" Color="ff0000" />
+          <State Label="B" Color="ffff00" />
+          <State Label="C" Color="00ff00" />
+          <State Label="D" Color="00ffff" />
+          <State Label="E" Color="0000ff" />
+          <State Label="F" Color="ff8888" />
+          <State Label="X" Color="ffffff" />
+     </AllStates>
+     <InitialStates>
+          <State Label="A" Color="ff0000" />
+          <State Label="B" Color="ffff00" />
+          <State Label="C" Color="00ff00" />
+          <State Label="D" Color="00ffff" />
+          <State Label="E" Color="0000ff" />
+          <State Label="F" Color="ff8888" />
+     </InitialStates>
+     <SeedStates>
+          <State Label="X" Color="ffffff" />
+     </SeedStates>
+     <!-- X-Rules: Label1 = Right (+x); Label 2 = Left (-x) -->
+     <X-Affinities>
+          <Rule Label1="A" Label2="X" Strength="1" />
+          <Rule Label1="X" Label2="B" Strength="1" />
+     </X-Affinities>
+     <X-Transitions>
+          <Rule Label1="A" Label2="X" Label1Final = "F" Label2Final="F"></Rule>
+     </X-Transitions>
+     <!-- Y-Rules: Label1 = Up (+y); Label2 = Down (-y) -->
+     <Y-Affinities>
+          <Rule Label1="C" Label2="X" Strength="1" />
+          <Rule Label1="X" Label2="D" Strength="1" />
+     </Y-Affinities>
+     <Y-Transitions/>
+     <!-- Z-Rules: Label1 = Towards (+z); Label2 = Away (-z) -->
+     <Z-Affinities/>
+     <Rule Label1="E" Label2="X" Strength="1" />
+     <Rule Label1="X" Label2="F" Strength="1" />
+     <Z-Transitions/>
+</System>
