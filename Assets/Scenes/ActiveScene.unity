@@ -312,7 +312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b7c53637155bc447bf6a4feb11905fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CAMERASPEED: 10
 --- !u!1 &1845860845
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,3 +355,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea0ec5b56854a60409ff9c918cfc1acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 418449085617109869, guid: b46c3bca24876c34d834472fdc76303c, type: 3}
