@@ -16,6 +16,16 @@ public class Camera_Control : MonoBehaviour
      // Update is called once per frame
      void Update()
     {
+          // Allow for faster camera movement
+          if (Input.GetKey(KeyCode.LeftShift))
+          {
+               MOVESPEED = 9f;
+          }
+          else
+          {
+               MOVESPEED = 5f;
+          }
+
           // Snap Camera back to center
           if (Input.GetKey(KeyCode.Space))
           {

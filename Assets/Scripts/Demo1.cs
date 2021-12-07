@@ -31,7 +31,15 @@ public class Demo1 : MonoBehaviour
                int tempB = Convert.ToInt32(temp_hex.Substring(4, 2), 16);
 
                Color tempColor = new Color(tempR, tempG, tempB, 0xff);
-               currentTile.transform.GetChild(6).GetComponent<Renderer>().material.color = tempColor;
+               Transform currentTileBody = currentTile.transform.GetChild(6);
+               currentTileBody.GetComponent<Renderer>().material.color = tempColor;
+
+               // Color tile frames
+               for (int i = 0; i < 12; i++)
+               {
+                    Transform currentFrame = currentTileBody.transform.GetChild(i);
+                    currentFrame.GetComponent<Renderer>().material.color = Color.black;
+               }
 
                // Increment x
                x += 1;
@@ -48,14 +56,22 @@ public class Demo1 : MonoBehaviour
                     TMP_Text currentLabel = currentTile.transform.GetChild(i).GetComponent<TMP_Text>();
                     currentLabel.SetText(state.Key);
                }
-               // Color tile
+               // Color tile body
                string temp_hex = state.Value;
                int tempR = Convert.ToInt32(temp_hex.Substring(0, 2), 16);
                int tempG = Convert.ToInt32(temp_hex.Substring(2, 2), 16);
                int tempB = Convert.ToInt32(temp_hex.Substring(4, 2), 16);
 
                Color tempColor = new Color(tempR, tempG, tempB, 0xff);
-               currentTile.transform.GetChild(6).GetComponent<Renderer>().material.color = tempColor;
+               Transform currentTileBody = currentTile.transform.GetChild(6);
+               currentTileBody.GetComponent<Renderer>().material.color = tempColor;
+
+               // Color tile frames
+               for (int i = 0; i < 12; i++)
+               {
+                    Transform currentFrame = currentTileBody.transform.GetChild(i);
+                    currentFrame.GetComponent<Renderer>().material.color = Color.black;
+               }
 
                // Increment x
                x += 1;
@@ -79,7 +95,15 @@ public class Demo1 : MonoBehaviour
                int tempB = Convert.ToInt32(temp_hex.Substring(4, 2), 16);
 
                Color tempColor = new Color(tempR, tempG, tempB, 0xff);
-               currentTile.transform.GetChild(6).GetComponent<Renderer>().material.color = tempColor;
+               Transform currentTileBody = currentTile.transform.GetChild(6);
+               currentTileBody.GetComponent<Renderer>().material.color = tempColor;
+
+               // Color tile frames
+               for (int i = 0; i < 12; i++)
+               {
+                    Transform currentFrame = currentTileBody.transform.GetChild(i);
+                    currentFrame.GetComponent<Renderer>().material.color = Color.black;
+               }
 
                // Increment x
                x += 1;
