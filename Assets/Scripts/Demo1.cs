@@ -27,7 +27,7 @@ public class Demo1 : MonoBehaviour
                cube.GetComponent<Renderer>().material.color = tempColor;
 
                // Increment x
-               x += 2;
+               x += 1;
           }
      }
 
